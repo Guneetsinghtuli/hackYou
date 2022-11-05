@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hack you!!!</title>
+  </head>
+  <style>
+    .center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    .hidden{
+        display: none;
+    }
+  </style>
+  <body>
+    <div class="center">
+        <h1>Hey, you are hacked!!!</h1>
+      <h2>I will hack you just click over here and see the magic</h2>
+      <div>
+        <button onclick="hacked()">Click me</button>
+      </div>
+      <div id="hidden" class="hidden">
+        <img src="https://media.giphy.com/media/idGqQh5wuSfusGnxEc/giphy.gif" >
+      </div>
+    </div>
+    <script>
+        function hacked(){
+            document.getElementById("hidden").classList.remove("hidden");
+        }
+        </script>
+  </body>
+</html>
